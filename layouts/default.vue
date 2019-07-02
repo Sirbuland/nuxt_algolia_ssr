@@ -73,4 +73,8 @@ html {
 #nav {
   text-align: center;
 }
+a {
+  color: #250098 !important;
+  cursor: pointer;
+}
 </style>

@@ -15,8 +15,11 @@
     "cross-env": "^5.2.0",
     "instantsearch.js": "^3.5.3",
     "nuxt": "^2.4.5",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "vue-instantsearch": "^2.0.0",
-    "vuetify": "^1.5.16"
+    "vuetify": "^1.5.16",
+    "vuetify-loader": "^1.2.2"
   },
   "keywords": []
 }

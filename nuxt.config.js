@@ -1,10 +1,16 @@
+import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 /* eslint-disable import/no-commonjs */
 require('dotenv').config()
 
 export default {
   mode: 'universal',
   build: {
-    transpile: ["vue-instantsearch", "instantsearch.js/es"]
+    transpile: [
+      "vuetify/lib", 
+      "vue-instantsearch", 
+      "instantsearch.js/es"
+    ],
+    plugins: [ new VuetifyLoaderPlugin() ]
   },
   plugins: [
     { src: '~/plugins/instantSearch'},
@@ -13,7 +19,7 @@ export default {
   env: {
     vueAppAlgoliaAppId: process.env.VUE_APP_ALGOLIA_APP_ID,
     vueAppAlgoliaApiKey: process.env.VUE_APP_ALGOLIA_API_KEY,
-    vueAppAlgoliaIndexName: process.env.VUE_APP_ALGOLIA_INDEX_NAME,
+    vueAppAlgoliaIndexName: process.env.VUE_APP_ALGOLIA_INDEX_NAME
   },
   modules: [
     ['@nuxtjs/dotenv'],
