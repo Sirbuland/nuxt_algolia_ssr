@@ -1,9 +1,23 @@
 /* eslint-disable import/no-commonjs */
+require('dotenv').config()
 
-module.exports = {
+export default {
+  mode: 'universal',
   build: {
     transpile: ["vue-instantsearch", "instantsearch.js/es"]
   },
+  plugins: [
+    { src: '~/plugins/instantSearch'},
+    { src: '~/plugins/vuetify' }
+  ],
+  env: {
+    vueAppAlgoliaAppId: process.env.VUE_APP_ALGOLIA_APP_ID,
+    vueAppAlgoliaApiKey: process.env.VUE_APP_ALGOLIA_API_KEY,
+    vueAppAlgoliaIndexName: process.env.VUE_APP_ALGOLIA_INDEX_NAME,
+  },
+  modules: [
+    ['@nuxtjs/dotenv'],
+  ],
   router: {
     parseQuery(query) {
       // eslint-disable-next-line
