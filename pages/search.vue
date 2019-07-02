@@ -1,20 +1,18 @@
 <template>
-  <ais-instant-search-ssr>
+  <div>
     <ais-search-box />
     <ais-stats />
-    <ais-refinement-list attribute="brand" />
+    <ais-refinement-list attribute="hersteller" />
     <ais-hits>
       <template slot="item" slot-scope="{ item }">
         <p>
-          <ais-highlight attribute="name" :hit="item" />
         </p>
         <p>
-          <ais-highlight attribute="brand" :hit="item" />
         </p>
       </template>
     </ais-hits>
     <ais-pagination />
-  </ais-instant-search-ssr>
+  </div>
 </template>
 
 <script>
