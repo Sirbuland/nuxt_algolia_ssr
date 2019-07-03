@@ -67,7 +67,7 @@
     },
     methods: {
       customRefine( refine, value ) {
-        this.$router.push({ path: '/search' });
+        this.$router.push({ name: 'Search', params: {refine: refine, value: value} });
         refine(value);
       },
       toggleTeaser( ) {

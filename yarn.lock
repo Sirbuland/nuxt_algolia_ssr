@@ -1114,7 +1114,7 @@ algoliasearch-helper@^2.26.0, algoliasearch-helper@^2.26.1:
     lodash "^4.17.5"
     qs "^6.5.1"
 
-algoliasearch@^3.32.0:
+algoliasearch@^3.33.0:
   version "3.33.0"
   resolved "https://registry.yarnpkg.com/algoliasearch/-/algoliasearch-3.33.0.tgz#83b541124ebb0db54643009d4e660866b3177cdf"
   dependencies:
@@ -6007,7 +6007,7 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.3.tgz#2756f46cb3258054c5f4723de8ae7e87302a1ccf"
 
-vue-instantsearch@^2.0.0:
+vue-instantsearch@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/vue-instantsearch/-/vue-instantsearch-2.2.1.tgz#17700fa9f65bed8175eb3f81cc010bca41077435"
   dependencies:
